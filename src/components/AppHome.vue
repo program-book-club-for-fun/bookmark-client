@@ -1,9 +1,12 @@
 <template>
-    <div>
-        <v-carousel>
-            <v-carousel-item v-for="(item,i) in items" :src="item.src" :key="i"></v-carousel-item>
-        </v-carousel>
-    </div>
+  <div>
+    <v-carousel>
+      <v-carousel-item
+        v-for="(item,i) in items"
+        :src="item.src"
+        :key="i"/>
+    </v-carousel>
+  </div>
 </template>
 
 <script>
