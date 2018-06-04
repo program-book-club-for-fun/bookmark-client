@@ -1,30 +1,24 @@
 <template>
-  <v-container>
-    <v-alert
-      :value="alert"
-      color="lime"
-      type="warning">
-      Please fill in Email and Password
-    </v-alert>
-    <v-form @submit.prevent="submit">
-      <v-text-field
-        v-model="email"
-        label="E-mail"
-        required
-      />
+    <v-container>
+          <v-alert :value="alert" color="lime" type="warning">
+            Please fill in Email and Password
+        </v-alert>
+        <v-form @submit.prevent="submit">
+            <v-text-field
+            v-model="email"
+            label="E-mail"
+            required
+            ></v-text-field>
 
-      <v-text-field
-        v-model="password"
-        label="Password"
-        type="password"
-        required
-      />
-      <v-btn
-        color="green"
-        class="success"
-        type="submit">Submit</v-btn>
-    </v-form>
-  </v-container>
+            <v-text-field
+            v-model="password"
+            label="Password"
+            type="password"
+            required
+            ></v-text-field>
+            <v-btn color="green" class="success" type="submit">Submit</v-btn>
+        </v-form>
+    </v-container>
 </template>
 
 <script>
