@@ -40,6 +40,7 @@
 </template>
 
 <script>
+  //匯入axios
   import axios from 'axios'
 
   export default {
