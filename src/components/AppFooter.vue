@@ -1,9 +1,14 @@
 <template>
-  <v-footer height="auto" fixed>
-    <v-card flat tile class="flex">
+  <v-footer
+    height="auto"
+    fixed>
+    <v-card
+      flat
+      tile
+      class="flex">
       <v-card-text class="teal white--text">
         <strong class="subheading text-md-center">Get connected with us on social networks!</strong>
-        <v-spacer></v-spacer>
+        <v-spacer/>
         <v-btn
           v-for="icon in icons"
           :key="icon"
@@ -21,29 +26,42 @@
             :key="i"
             xs3
           >
-            <span class="body-2" v-text="col.title.toUpperCase()"></span>
+            <span
+              class="body-2"
+              v-text="col.title.toUpperCase()"/>
             <div
               v-for="(child, i) in col.children"
               :key="i"
               v-text="child"
-            ></div>
+            />
           </v-flex>
-          <v-flex xs3 layout column>
+          <v-flex
+            xs3
+            layout
+            column>
             <span class="body-2">CONTACT</span>
             <div>
-              <v-icon size="18px" class="mr-3">fas fa-home</v-icon>
+              <v-icon
+                size="18px"
+                class="mr-3">fas fa-home</v-icon>
               New York, NY 10012, US
             </div>
             <div>
-              <v-icon size="18px" class="mr-3">fas fa-envelope</v-icon>
+              <v-icon
+                size="18px"
+                class="mr-3">fas fa-envelope</v-icon>
               info@example.com
             </div>
             <div>
-              <v-icon size="18px" class="mr-3">fas fa-phone</v-icon>
+              <v-icon
+                size="18px"
+                class="mr-3">fas fa-phone</v-icon>
               + 01 234 567 88
             </div>
             <div>
-              <v-icon size="18px" class="mr-3">fas fa-print</v-icon>
+              <v-icon
+                size="18px"
+                class="mr-3">fas fa-print</v-icon>
               + 01 234 567 89
             </div>
           </v-flex>
@@ -57,27 +75,50 @@
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      icons: ['fab fa-facebook', 'fab fa-twitter', 'fab fa-google-plus', 'fab fa-linkedin', 'fab fa-instagram'],
-      rows: [
-        {
-          title: 'Company Name',
-          children: ['Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit']
-        },
-        {
-          title: 'Products',
-          children: ['MDBootstrap', 'MDWordPress', 'BrandFlow', 'Bootstrap Angular']
-        },
-        {
-          title: 'Useful Links',
-          children: ['Your account', 'Become an Affiliate', 'Shipping Rates', 'Helper']
-        },
-        {
-          title: 'Useful Links',
-          children: ['Your account', 'Become an Affiliate', 'Shipping Rates', 'Helper']
-        }
-      ]
-    })
-  }
+export default {
+  data: () => ({
+    icons: [
+      "fab fa-facebook",
+      "fab fa-twitter",
+      "fab fa-google-plus",
+      "fab fa-linkedin",
+      "fab fa-instagram"
+    ],
+    rows: [
+      {
+        title: "Company Name",
+        children: [
+          "Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+        ]
+      },
+      {
+        title: "Products",
+        children: [
+          "MDBootstrap",
+          "MDWordPress",
+          "BrandFlow",
+          "Bootstrap Angular"
+        ]
+      },
+      {
+        title: "Useful Links",
+        children: [
+          "Your account",
+          "Become an Affiliate",
+          "Shipping Rates",
+          "Helper"
+        ]
+      },
+      {
+        title: "Useful Links",
+        children: [
+          "Your account",
+          "Become an Affiliate",
+          "Shipping Rates",
+          "Helper"
+        ]
+      }
+    ]
+  })
+};
 </script>
