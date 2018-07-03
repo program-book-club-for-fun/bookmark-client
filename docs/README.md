@@ -5,10 +5,11 @@
 ## Visual Studio Code擴充插件
 
 * [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig): 設定`.editorconfig`於根目錄可以在每次儲存的時候將文件整理成設定的格式。
-* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): 依照制定於`.eslintrc.js`的規則來規範程式碼，此外掛可以讓VSCode用底線來表示出不符合規範的程式碼。
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): 依照制定於`.eslintrc.*`的規則來規範JavaScript程式碼，此外掛可以讓VSCode用底線來表示出不符合規範的程式碼。
+* [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint): 依照制定於`.stylelintrc.*`的規則來規範CSS程式碼，此外掛可以讓VSCode用底線來表示出不符合規範的程式碼。
 * [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur): VSCode開發Vue.js用的高亮、自動完成...等地整合開發工具。
 
-### 儲存時做lint
+### 儲存時做ESLint
 
 VSCode配合ESLint外掛可以在按下儲存時幫忙修改程式使其符合規則，在VSCode中將下面的設定加入:
 
@@ -28,3 +29,15 @@ VSCode配合ESLint外掛可以在按下儲存時幫忙修改程式使其符合�
 ```
 
 註: 如果沒效請確定在`local`或是`global`是否已安裝`ESLint`，`ESLint`的外掛必須安裝`ESLint`才能作用。
+
+### 儲存時做stylelint
+
+VSCode本身有驗證CSS是否合法，為了避免跟stylelint產生衝突，所以在VSCode的設定中加入:
+
+```js
+{
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
+}
+```

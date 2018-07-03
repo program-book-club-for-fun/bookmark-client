@@ -28,21 +28,21 @@
 </template>
 
 <script>
-    export default {
-        data(){
-            return{
-                email:null,
-                password:null,
-                alert:false,
-            }
-        },
-        methods:{
-            submit(){
-                if(!this.email && !this.password){
-                    this.alert = true;
-                }
-                console.log(`Email is ${this.email} and password is ${this.password}`);
-            }
-        }
+export default {
+  data() {
+    return {
+      email: null,
+      password: null,
+      alert: false
+    };
+  },
+  methods: {
+    submit() {
+      if (!this.email && !this.password) {
+        this.alert = true;
+      }
+      console.log(`Email is ${this.email} and password is ${this.password}`);
     }
+  }
+};
 </script>
