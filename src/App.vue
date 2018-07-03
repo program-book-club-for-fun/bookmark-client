@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-        <app-toolbar></app-toolbar>
-          <router-view/>        
-        <app-footer style="position:absolute;z-index:-1"></app-footer>
+    <app-toolbar/>
+    <router-view/>
+    <app-footer style="position:absolute;z-index:-1"/>
   </div>
 </template>
 
